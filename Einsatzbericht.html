@@ -1,0 +1,479 @@
+<html lang="de">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Darkmode CSS -->
+  <link rel="stylesheet" href="C:\Users\andre\OneDrive\Social Fire HQ\Coding\CSS\Darkmode.css">
+  <link rel="stylesheet" href="C:\Users\vmkzie1\Desktop\Code\Darkmode.css">
+
+  <title>Social Fire HQ - Einsatzbericht</title>
+
+
+</head>
+
+<body>
+
+
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Einsatzbericht</li>
+    </ol>
+  </nav>
+  <h3 align="center">Einsatzbericht</h3>
+  <div class="container-fluid">
+    <form>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="radioEinsatzart"><b>Einsatzart: </b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzBrand" value="Brand">
+            <label class="form-check-label" for="einsatzBrand">Brand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzTHL" value="THL">
+            <label class="form-check-label" for="einsatzTHL">THL</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzVerkehrsabsicherung" value="Verkehrsabsicherung">
+            <label class="form-check-label" for="einsatzVerkehrsabsicherung">Verkehrsabsicherung</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzErsteHilfe" value="Erste Hilfe">
+            <label class="form-check-label" for="einsatzErsteHilfe">Erste Hilfe</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzSonstiges" value="Sonstiges">
+            <label class="form-check-label" for="einsatzSonstiges">Sonstiges</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row" id="artBraende">
+        <div class="form-group col-md-1">
+
+        </div>
+        <div class="form-group col-fluid">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzBrand" value="Brand">
+            <label class="form-check-label" for="einsatzBrand">Kleinbrand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzTHL" value="THL">
+            <label class="form-check-label" for="einsatzTHL">Waldbrand/Vegetationsbrand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzVerkehrsabsicherung" value="Verkehrsabsicherung">
+            <label class="form-check-label" for="einsatzVerkehrsabsicherung">Brand PKW/LKW/KRad</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzErsteHilfe" value="Erste Hilfe">
+            <label class="form-check-label" for="einsatzErsteHilfe">Wohnungsbrand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzSonstiges" value="Sonstiges">
+            <label class="form-check-label" for="einsatzSonstiges">Gebäudebrand</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row" id="artTHL">
+        <div class="form-group col-md-1">
+        </div>
+        <div class="form-group col-fluid">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzBrand" value="Brand">
+            <label class="form-check-label" for="einsatzBrand">VU PKW</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzTHL" value="THL">
+            <label class="form-check-label" for="einsatzTHL">VU KRad</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzVerkehrsabsicherung" value="Verkehrsabsicherung">
+            <label class="form-check-label" for="einsatzVerkehrsabsicherung">VU LKW</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzErsteHilfe" value="Erste Hilfe">
+            <label class="form-check-label" for="einsatzErsteHilfe">Sturmeinsatz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzSonstiges" value="Sonstiges">
+            <label class="form-check-label" for="einsatzSonstiges">Auslaufende Betriebsstoffe</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzSonstiges" value="Sonstiges">
+            <label class="form-check-label" for="einsatzSonstiges">Türöffnung</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row"id="artVerkehrsabsicherung">
+        <div class="form-group col-md-1">
+        </div>
+        <div class="form-group col-fluid">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzBrand" value="Brand">
+            <label class="form-check-label" for="einsatzBrand">Umzug/Veranstaltung</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzTHL" value="THL">
+            <label class="form-check-label" for="einsatzTHL">Absicherung Rettungsdienst</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzVerkehrsabsicherung" value="Verkehrsabsicherung">
+            <label class="form-check-label" for="einsatzVerkehrsabsicherung">reine Verkehrsabsicherung BAB</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzErsteHilfe" value="Erste Hilfe">
+            <label class="form-check-label" for="einsatzErsteHilfe">reine Verkehrsabsicherung Außerorts</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzSonstiges" value="Sonstiges">
+            <label class="form-check-label" for="einsatzSonstiges">reine Verkehrsabsicherung Innerorts</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row" id="artErsteHilfe">
+        <div class="form-group col-md-1">
+        </div>
+        <div class="form-group col-fluid">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzBrand" value="Brand">
+            <label class="form-check-label" for="einsatzBrand">EH Unterstützung Rettungsdienst</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzTHL" value="THL">
+            <label class="form-check-label" for="einsatzTHL">SAN Wache</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzVerkehrsabsicherung" value="Verkehrsabsicherung">
+            <label class="form-check-label" for="einsatzVerkehrsabsicherung">Allgemeine erste Hilfe</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row" id="artSonstige">
+        <div class="form-group col-md-1">
+        </div>
+        <div class="col-fluid">
+          <label for="inSonstiges">Sonstiger Einsatz:</label>
+        </div>
+        <div class="col-md-1">
+            <input type="text" class="form-control" id="inSonstiges">
+        </div>
+        <div class="form-group col-fluid">
+
+        </div>
+      </div>
+</form>
+</div>
+<br><br><br>
+<div class="container-fluid">
+  <form>
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkAlarmierung"><b>Alarmierung: </b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmSirene" value="Sirene">
+            <label class="form-check-label" for="einsatzBrand">Sirene</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmPager" value="Sirene">
+            <label class="form-check-label" for="einsatzBrand">Pager</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmTelefon" value="Sirene">
+            <label class="form-check-label" for="einsatzBrand">Telefon</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmSonstige" value="Sirene">
+            <label class="form-check-label" for="einsatzBrand">Sonstige</label>
+          </div>
+
+        </div>
+      </div>
+      <div class="form-group row">
+
+        <label for="checkAlarmierung" class="col-md-1 col-form-label"><b>Alarmzeitpunkt: </b></label>
+
+        <div class="col-fluid">
+          <label for="inDatum" >Datum</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inDatum">
+        </div>
+        <div class="col-fluid">
+          <label for="vinUhrzeit" >Uhrzeit</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inUhrzeit">
+
+</div>
+
+      </div>
+      <div class="form-group row">
+
+        <label for="checkAlarmierung" class="col-sm-1 col-form-label"><b>Einsatzort </b></label>
+
+        <div class="col-sm">
+          <input type="text" class="form-control" id="Einsatzort">
+        </div>
+      </div>
+
+    </form>
+    </div>
+<br><br><br>    <div class="container-fluid">
+      <form>
+
+      <div class="form-group row">
+
+        <label for="checkAlarmierung" class="col-sm-1 col-form-label"><b>Einsatzleiter </b></label>
+
+        <div class="col-sm">
+          <input type="text" class="form-control" id="Einsatzort">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkAlarmierung"><b>Eingesetzte Fahrzeuge: </b></label>
+        </div>
+        <div class="form-group col-md-5">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgHLF" value="Sirene">
+            <label class="form-check-label" for="fzgHLF">HLF</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgGWL" value="Sirene">
+            <label class="form-check-label" for="fzgGWL">GWL</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgVSA" value="Sirene">
+            <label class="form-check-label" for="fzgVSA">VSA</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgMZF" value="Sirene">
+            <label class="form-check-label" for="fzgMZF">MZF</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgLF8" value="Sirene">
+            <label class="form-check-label" for="fzgLF8">LF8 (Appertshofen)</label>
+          </div>
+          <a href=" " class="btn btn-danger btn-lg active" role="button" aria-pressed="true" alt="..." >Besatzung auswählen</a>
+        </div>
+      </div>
+      <div class="form-group row">
+
+        <label for="checkAlarmierung" class="col-sm-1 col-form-label"><b>Bericht </b></label>
+
+        <div class="col-sm">
+          <input type="text" class="form-control" id="Bericht">
+        </div>
+      </div>
+      <div class="form-group row">
+
+        <label for="checkAlarmierung" class="col-sm-1 col-form-label"><b>Daten Verursacher </b></label>
+
+        <div class="col-sm">
+          <input type="text" class="form-control" id="Verursacher">
+        </div>
+      </div>
+    </form>
+    </div>
+<br><br><br>
+    <div class="container-fluid">
+      <form>
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkAlarmierung"><b>Eingesetzte Mittel: </b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMTHL" id="emRettungssatz" value="Sirene">
+            <label class="form-check-label" for="emRettungssatz">Rettungssatz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMTHL" id="emOelbinder" value="Sirene">
+            <label class="form-check-label" for="emOelbinder">Ölbindemittel</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMTHL" id="emKehren" value="Sirene">
+            <label class="form-check-label" for="emKehren">Kehrwerkzeug</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMTHL" id="emGreifzug" value="Sirene">
+            <label class="form-check-label" for="emGreifzug">Greifzug</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-1">
+        </div>
+        <div class="form-group col-md-7">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMBrand" id="emSchnellangriff" value="Sirene">
+            <label class="form-check-label" for="emSchnellangriff">Schnellangriff</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMBrand" id="emCSchlauch" value="Sirene">
+            <label class="form-check-label" for="emCSchlauch">C schläuche</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMBrand" id="emStrahlrohr" value="Sirene">
+            <label class="form-check-label" for="emStrahlrohr">Strahlrohr</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMBrand" id="emASG" value="Sirene">
+            <label class="form-check-label" for="emASG">Atemschutzgeräte</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMBrand" id="emLASG" value="Sirene">
+            <label class="form-check-label" for="emLASG">Langzeitatmer</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMBrand" id="emPulver" value="Sirene">
+            <label class="form-check-label" for="emPulver">Pulverlöscher</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMBrand" id="emCO2" value="Sirene">
+            <label class="form-check-label" for="emCO2">CO2 Löscher</label>
+          </div>
+
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-1">
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="emVerband" value="Sirene">
+            <label class="form-check-label" for="emVerband">Verbandsmaterial</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="emO2" value="Sirene">
+            <label class="form-check-label" for="emO2">Sauerstoff</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="emAED" value="Sirene">
+            <label class="form-check-label" for="emAED">AED</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="emStiffneck" value="Sirene">
+            <label class="form-check-label" for="emStiffneck">Stiffneck</label>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkAlarmierung"><b>Anwesende Feuerwehren</b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwHepberg" value="Sirene">
+            <label class="form-check-label" for="fwHepberg">Hepberg</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwLenting" value="Sirene">
+            <label class="form-check-label" for="fwLenting">Lenting</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKoesching" value="Sirene">
+            <label class="form-check-label" for="fwKoesching">Kösching</label>
+          </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKBM" value="Sirene">
+              <label class="form-check-label" for="fwKBM">KBM</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKBI" value="Sirene">
+              <label class="form-check-label" for="fwKBI">KBI</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKBR" value="Sirene">
+              <label class="form-check-label" for="fwKBR">KBR</label>
+            </div>
+        </div>
+
+
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="fwWeitere">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkAlarmierung"><b>Weitere Stellen</b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsPol" value="Sirene">
+            <label class="form-check-label" for="emVerband">Polizei</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsRTW" value="Sirene">
+            <label class="form-check-label" for="emO2">RTW</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsNEF" value="Sirene">
+            <label class="form-check-label" for="emAED">Notarzt</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsRTH" value="Sirene">
+            <label class="form-check-label" for="emAED">Christoph 32</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsSLT" value="Sirene">
+            <label class="form-check-label" for="emAED">Straßenlastträger</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsAbschlepper" value="Sirene">
+            <label class="form-check-label" for="emAED">Abschleppdienst</label>
+          </div>
+        </div>
+
+
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="Datum">
+        </div>
+      </div>
+
+    </form>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="container-fluid">
+        <a href=" " class="btn btn-danger btn-lg active" role="button" aria-pressed="true" alt="..." >Bericht abschicken</a>
+      </div>
+
+
+
+
+
+
+
+    </body>
+    <footer>
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>
+    </html>
