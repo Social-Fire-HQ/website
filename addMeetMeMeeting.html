@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Darkmode CSS -->
+  <link rel="stylesheet" href="assets/css/Darkmode.css">
+
+  <title>Social Fire HQ - Home</title>
+
+
+</head>
+<body>
+  <p></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <div class="col-md4">
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  <a class="navbar-brand" href="#">SFHQ</a> -->
+            <a class="navbar-brand" href="Home.html"> <img src="https://avatars2.githubusercontent.com/u/74532550?s=200&v=4" width="50" height="50" ></a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item">
+                  <a class="nav-link" href="PlannerQuickview.html">Planner Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="MeetMe.html">Meet Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Wiki.html">Wiki</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Schulungsraum.html">Schulungsraum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Einsatzbericht.html">Einsatzbericht</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Einsatzhelfer.html">Einsatzhelfer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Services.html">Services</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <div class="custom-control custom-switch mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="toggleDarkmode" checked="true">
+                  <label class="custom-control-label" for="toggleDarkmode">Darkmode</label>
+                </div>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+              </form>
+
+              <div class="col-md-1 ml-auto" align="right">
+                <a href="Profil.html" class="btn btn-danger btn-lg active" role="button" aria-pressed="true" alt="..." >Profil</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+      <li class="breadcrumb-item"><a href="meetMeQuickview.html">MeetMe</a></li>
+      <li class="breadcrumb-item active" aria-current="page">MeetMe Erstellen</li>
+    </ol>
+  </nav>
+
+  <p> </p>
+  <h3 align="center">Neues MeetMe Meeting erstellen</h3>
+  <p></p>
+
+  <div class="container-fluid">
+    <form>
+
+      <form>
+        <div class="form-group row">
+          <label for="inSubject" class="col-sm-1 col-form-label"><b>Meetingname</b></label>
+          <div class="col-sm">
+            <input type="text" class="form-control" id="inSubject">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-1">
+            <label for="radioEinsatzart"><b>Meetingart</b></label>
+          </div>
+          <div class="form-group col-md-4">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMeetingKind" id="kindCelebration" value="Feuerwehrfest">
+              <label class="form-check-label" for="einsatzBrand">Feuerwehrfest</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMeetingKind" id="kindLargeExcercise" value="Großübung">
+              <label class="form-check-label" for="einsatzTHL">Großübung</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMeetingKind" id="kindCourse" value="Lehrgang">
+              <label class="form-check-label" for="einsatzVerkehrsabsicherung">Lehrgang</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMeetingKind" id="kindMeetup" value="Treffen">
+              <label class="form-check-label" for="einsatzErsteHilfe">Treffen</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMeetingKind" id="kindAssembly" value="Versammlung">
+              <label class="form-check-label" for="einsatzSonstiges">Versammlung</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMeetingKind" id="kindWorkshop" value="Workshop">
+              <label class="form-check-label" for="einsatzFehlalarm">Workshop</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioMeetingKind" id="kindBigEvent" value="Großveranstaltung">
+              <label class="form-check-label" for="einsatzFehlalarm">Großveranstaltung</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inPlace" class="col-sm-1 col-form-label"><b>Ort</b></label>
+          <div class="col-sm">
+            <input type="text" class="form-control" id="inPlace">
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label class="col-md-1 col-form-label"><b>Zeitpunkt</b></label>
+          <div class="col-fluid">
+            <label for="inDate" >Datum</label>
+          </div>
+          <div class="col-md-1">
+            <input type="text" class="form-control" id="inDate">
+          </div>
+          <div class="col-fluid">
+            <label for="inTime" >Uhrzeit</label>
+          </div>
+          <div class="col-md-1">
+            <input type="text" class="form-control" id="inTime">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inDesciption" class="col-sm-1 col-form-label"><b>Beschreibung</b></label>
+          <div class="col-sm">
+            <textarea class="form-control" id="inDescription" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inTargetGroup" class="col-sm-1 col-form-label"><b>Zielgruppe</b></label>
+          <div class="col-sm">
+            <textarea class="form-control" id="inTargetGroup" rows="2"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+    <p></p>
+    <div class="container-fluid">
+      <div class="form-group col-md-4">
+        <a href=" " class="btn btn-danger btn-lg active" role="button" aria-pressed="true" id="saveMeeting" alt="..." >Speichern</a>
+      </div>
+    </div>
+  </body>
+
+  <foot>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </foot>
+  </html>
