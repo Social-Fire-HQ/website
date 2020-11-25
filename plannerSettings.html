@@ -28,8 +28,10 @@
 </nav>
 <p></p>
 
-<div class="container-fluid">
+
 <h5>Welche Bereiche sollen angezeigt werden?</h5>
+
+<div class="container-fluid">
   <form>
     <div class="form-row">
 
@@ -48,15 +50,27 @@
                     </label>
                   </div>
                   <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="checkAktive">
+                    <label class="form-check-label" for="checkAktive">
+                      Aktive
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" value="" id="checkVerein">
                     <label class="form-check-label" for="checkVerein">
-                      Meet Me
+                      Verein
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" value="" id="checkJugend">
+                    <label class="form-check-label" for="checkJugend">
+                      Jugend
                     </label>
                   </div>
                   <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" value="" id="checkPrüftermine">
                     <label class="form-check-label" for="checkPrüftermine">
-                      Übungsplan
+                      Prüftermine
                     </label>
                   </div>
 
@@ -66,8 +80,10 @@
 
     </div>
 </form>
+</div>
 <p></p>
 <h5>Welche Übungen sollen angezeigt werden?</h5>
+<div class="container-fluid">
 <form>
   <div class="form-row">
 
@@ -76,52 +92,48 @@
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" value="" id="checkStandard">
                   <label class="form-check-label" for="checkStandard">
-                    Meet Me
+                    Allgemeinübungen
                   </label>
                   </div>
                   <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" value="" id="checkAtemschutz">
                   <label class="form-check-label" for="checkAtemschutz">
-                    Übungsplan
+                    Atemschutz
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" value="" id="checkMaschinisten">
                   <label class="form-check-label" for="checkMaschinisten">
-                    Meet Me
+                    Maschinisten
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" value="" id="checkSanitäter">
                   <label class="form-check-label" for="checkSanitäter">
-                    Übungsplan
+                    Sanitäter
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" value="" id="checkGruppenführer">
                   <label class="form-check-label" for="checkGruppenführer">
-                    Meet Me
+                    Gruppenführer
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" value="" id="checkMTA">
                   <label class="form-check-label" for="checkMTA">
-                    Übungsplan
+                    MTA
                   </label>
                 </div>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="checkbox" value="" id="checkJugend">
                   <label class="form-check-label" for="checkJugend">
-                    Übungsplan
+                    Jugendübungen
                   </label>
                 </div>
-
-
-
-
-
   </div>
 </form>
+</div>
 <p></p>
 <button type="submit" class="btn btn-danger" id="btnEinstellungenÜbernehmen">Einstellungen Übernehmen</button>
 </body>
