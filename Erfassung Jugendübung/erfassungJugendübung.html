@@ -154,10 +154,339 @@
 
     <div class="container-fluid">
       <div class="form-group col-md-4">
-        <a href=" " class="btn btn-danger btn-lg active" id="btnSpeichern" role="button" aria-pressed="true" alt="..." >Jugendliche Erfassen</a> <!--hier Modal einbauen -->
-        <a href=" " class="btn btn-danger btn-lg active" id="btnAbschicken" role="button" aria-pressed="true" alt="..." >Ausbilder Erfassen</a> <!--hier Modal einbauen -->
+        <button type="button" class="btn btn-danger" id="btnSpeichern" data-toggle="modal" data-target="#modalJugend">Jugendliche Erfassen</button> <!--hier Modal einbauen -->
+  <!--      <a href=" " class="btn btn-danger btn-lg active" id="btnAbschicken" role="button" aria-pressed="true" data-toggle="modal" data-targe="#modalBetreuer" alt="..." >Ausbilder Erfassen</a> <!--hier Modal einbauen -->
       </div>
     </div>
+
+
+
+    <div class="modal fade" id="modalJugend" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Anwesenheit Jugendliche</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="container">
+            <form>
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Jugendlicher</label>
+              </div>
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Anwesend</label>
+              </div>
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Entschuldigt</label>
+              </div>
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Unentschuldigt</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Brening, Kevin</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu1" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu1" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu1" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Clapie, Nina</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu2" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu2" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu2" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Gallinat, Leeland</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu3" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu3" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu3" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Hoffmann, Pia</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu4" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu4" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu4" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Huber, Julian</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu5" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu5" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu5" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Karl, Henry</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu6" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu6" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu6" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Kessler, Jan</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu7" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu7" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu7" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Kohlmann, Krisitan</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu8" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu8" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu8" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Kolb, Senta</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu9" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu9" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu9" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Kolb, Vinzent</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu10" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu10" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu10" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Nieselberger, Philipp</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu11" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu11" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu11" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Nikolaus, Timo</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu12" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu12" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu12" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Ostermeier, Moritz</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu13" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu13" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu13" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Rutzenhöfer, Manuel</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu14" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu14" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu14" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Schneider, Annalena</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu15" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu15" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu15" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Schneider, Tobias</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu16" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu16" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu16" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Treib, Felix</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu17" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu17" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu17" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Werner, Leonhard</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu18" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu18" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu18" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Zimmermann, Nico</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu19" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu19" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu19" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+
+            </form>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="form-group row">
       <label for="inBericht" class="col-sm-1 col-form-label"><b>Notizen</b></label>
