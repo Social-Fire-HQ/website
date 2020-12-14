@@ -122,6 +122,66 @@
       <input type="text" class="form-control" id="inSonstiges">
     </div>
 
+    <div class="form-row">
+      <div class="form-group col-md-1">
+        <label for="radioEinsatzart"><b>Art: </b></label>
+      </div>
+      <div class="form-group col-md-4">
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzBrand" value="Brand" onclick="auswahlEinsatzart()">
+          <label class="form-check-label" for="einsatzBrand">Theorieübung</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzTHL" value="THL" onclick="auswahlEinsatzart()">
+          <label class="form-check-label" for="einsatzTHL">Praxisübung</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzVerkehrsabsicherung" value="Verkehrsabsicherung" onclick="auswahlEinsatzart()">
+          <label class="form-check-label" for="einsatzVerkehrsabsicherung">Arbeitseinsatz</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzErsteHilfe" value="Erste Hilfe" onclick="auswahlEinsatzart()">
+          <label class="form-check-label" for="einsatzErsteHilfe">Allgemeine Jugendarbeit</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzSonstiges" value="Sonstiges" onclick="auswahlEinsatzart()">
+          <label class="form-check-label" for="einsatzSonstiges">Jugendwartsarbeit</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzFehlalarm" value="Fehlalarm" onclick="auswahlEinsatzart()">
+          <label class="form-check-label" for="einsatzFehlalarm">Dienstsport</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="form-group col-md-4">
+        <a href=" " class="btn btn-danger btn-lg active" id="btnSpeichern" role="button" aria-pressed="true" alt="..." >Jugendliche Erfassen</a>
+        <a href=" " class="btn btn-danger btn-lg active" id="btnAbschicken" role="button" aria-pressed="true" alt="..." >Ausbilder Erfassen</a>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inBericht" class="col-sm-1 col-form-label"><b>Notizen</b></label>
+      <div class="col-sm">
+        <input type="text" class="form-control" id="inBericht">
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label for="inBericht" class="col-sm-1 col-form-label"><b>Besondere Vorkommnisse</b></label>
+      <div class="col-sm">
+        <input type="text" class="form-control" id="inBericht">
+      </div>
+    </div>
+
+
+    <div class="container-fluid">
+      <div class="form-group col-md-4">
+        <a href=" " class="btn btn-danger btn-lg active" id="btnSpeichern" role="button" aria-pressed="true" alt="..." >Speichern</a>
+        <a href=" " class="btn btn-danger btn-lg active" id="btnAbschicken" role="button" aria-pressed="true" alt="..." >Abschicken</a>
+      </div>
+    </div>
 </body>
 
 <foot>
