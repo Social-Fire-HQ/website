@@ -155,7 +155,7 @@
     <div class="container-fluid">
       <div class="form-group col-md-4">
         <button type="button" class="btn btn-danger" id="btnSpeichern" data-toggle="modal" data-target="#modalJugend">Jugendliche Erfassen</button> <!--hier Modal einbauen -->
-  <!--      <a href=" " class="btn btn-danger btn-lg active" id="btnAbschicken" role="button" aria-pressed="true" data-toggle="modal" data-targe="#modalBetreuer" alt="..." >Ausbilder Erfassen</a> <!--hier Modal einbauen -->
+<button type="button" class="btn btn-danger" id="btnSpeichern" data-toggle="modal" data-target="#modalBetreuer">Betreuer Erfassen</button> <!--hier Modal einbauen -->
       </div>
     </div>
 
@@ -487,6 +487,89 @@
       </div>
     </div>
 
+
+    <div class="modal fade" id="modalBetreuer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Anwesenheit Betreuer</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <div class="container">
+            <form>
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Jugendlicher</label>
+              </div>
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Anwesend</label>
+              </div>
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Entschuldigt/Frei</label>
+              </div>
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Unentschuldigt</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Ampferl, Jonas</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu1" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu1" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu1" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Binder, Stefan</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu2" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu2" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu2" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Mengert, Andreas</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu3" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu3" id="inlineRadio1" value="option1">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu3" id="inlineRadio1" value="option1">
+              </div>
+            </div>
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="form-group row">
       <label for="inBericht" class="col-sm-1 col-form-label"><b>Notizen</b></label>
