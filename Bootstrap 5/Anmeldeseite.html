@@ -13,7 +13,7 @@
   <!-- Darkmode JS -->
   <script type="text/javascript" src="assets/js/navbar.js"></script>
 
-  
+
     <title>Social Fire HQ</title>
   </head>
 
@@ -31,16 +31,19 @@
 
     <div class="container-fluid">
       <form>
-        <div class="form-group">
-          <label for="loginMail">Email Adresse</label>
-          <input type="email" class="form-control" id="loginMail" aria-describedby="emailHelp" placeholder="Email">
-          <small id="emailHelp" class="form-text text-muted">E-Mail Adresse deines Konos.</small>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="inMail" placeholder="name@example.com">
+          <label for="inMail">Email Adresse</label>
         </div>
-        <div class="form-group">
-          <label for="loginPassword">Passwort</label>
-          <input type="password" class="form-control" id="loginPassword" placeholder="Passwort">
+        <div class="form-floating">
+          <input type="password" class="form-control" id="inPassword" placeholder="Password">
+          <label for="inPassword">Passwort</label>
         </div>
+      </div>
+      <br>
+      <div class="container-fluid">
         <a  href="-" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Login</a>
+      </div>
       </form>
     </div>
     <p></p>
