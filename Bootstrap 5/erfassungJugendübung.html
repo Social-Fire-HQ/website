@@ -80,109 +80,120 @@
       </div>
     </div>
   </div>
-  </div>
+</div>
 
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
-      <li class="breadcrumb-item"><a href="Home.html">Übungserfassung</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Neue Jugendübungen</li>
-    </ol>
-  </nav>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="Home.html">Übungserfassung</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Neue Jugendübungen</li>
+  </ol>
+</nav>
 
-  <h3 align="center">Erfassung Jugendübung</h3>
+<h3 align="center">Erfassung Jugendübung</h3>
 
 <div class="container-fluid">
   <form>
     <p>
-<div class="row">
-  <div class="col-md-1">
-      <label class="col-md-1 col-form-label"><b>Wann?</b></label>
-    </div>
+      <div class="row">
+        <div class="col-md-1">
+          <label class="col-md-1 col-form-label"><b>Wann?</b></label>
+        </div>
 
-      <div class="col">
-        <label for="inDatum" >Datum</label>
-        <input type="text" class="form-control" id="inDatum">
+        <div class="col">
+          <label for="inDatum" >Datum</label>
+          <input type="text" class="form-control" id="inDatum">
+        </div>
+        <div class="col">
+          <label for="inStartUhrzeit" >Start Uhrzeit</label>
+          <input type="text" class="form-control" id="inStartUhrzeit">
+        </div>
+        <div class="col">
+          <label for="inEndUhrzeit" >Ende Uhrzeit</label>
+          <input type="text" class="form-control" id="inEndUhrzeit">
+        </div>
       </div>
-      <div class="col">
-        <label for="inStartUhrzeit" >Start Uhrzeit</label>
-        <input type="text" class="form-control" id="inStartUhrzeit">
-      </div>
-      <div class="col">
-        <label for="inEndUhrzeit" >Ende Uhrzeit</label>
-        <input type="text" class="form-control" id="inEndUhrzeit">
-      </div>
-    </div>
-</p>
-
-<div class="row">
+    </p>
+    <p>
+      <div class="row">
         <label class="col-md-1 col-form-label"><b>Übungsthema?</b></label>
 
-    <div class="col-md-3">
-      <input type="text" class="form-control" id="inÜbungsthema">
-    </div>
-  </div>
-  <div class="form-group row">
-          <label class="col-md-1 col-form-label"><b>Übungsort</b></label>
-
-    <div class="col-md-3">
-      <input type="text" class="form-control" id="inÜbungsort">
-    </div>
-</div>
-    <div class="form-row">
-      <div class="form-group col-md-1">
-        <label for="radioÜbungsart"><b>Art: </b></label>
-      </div>
-      <div class="form-group col-md-6">
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioÜbungsart" id="üTheorie" value="Theorieübung">
-          <label class="form-check-label" for="üTheorie">Theorieübung</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioÜbungsart" id="üPraxis" value="Praxisübung">
-          <label class="form-check-label" for="üPraxis">Praxisübung</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioÜbungsart" id="üArbeit" value="Arbeitseinsatz">
-          <label class="form-check-label" for="üArbeit">Arbeitseinsatz</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioÜbungsart" id="üJugendarbeit" value="Allgemeine Jugendarbeit">
-          <label class="form-check-label" for="üJugendarbeit">Allgemeine Jugendarbeit</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioÜbungsart" id="üJugendwart" value="Jugendwartsarbeit">
-          <label class="form-check-label" for="üJugendwart">Jugendwartsarbeit</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioÜbungsart" id="üSport" value="Dienstsport">
-          <label class="form-check-label" for="üSport">Dienstsport</label>
+        <div class="col">
+          <input type="text" class="form-control" id="inÜbungsthema">
         </div>
       </div>
-    </div>
+    </p>
+    <p>
+      <div class="row">
+        <label class="col-md-1 col-form-label"><b>Übungsort</b></label>
 
-    <div class="container-fluid">
-      <div class="form-group col-md-4">
-        <button type="button" class="btn btn-danger" id="btnJugend" data-toggle="modal" data-target="#modalJugend">Jugendliche Erfassen</button> <!--hier Modal einbauen -->
-<button type="button" class="btn btn-danger" id="btnBetreuer" data-toggle="modal" data-target="#modalBetreuer">Betreuer Erfassen</button> <!--hier Modal einbauen -->
+        <div class="col-md-3">
+          <input type="text" class="form-control" id="inÜbungsort">
+        </div>
       </div>
-    </div>
-
-
-
-    <div class="modal fade" id="modalJugend" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalJugend">Anwesenheit Jugendliche</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+    </p>
+    <p>
+      <div class="row">
+        <div class="col-md-1">
+          <label for="radioÜbungsart"><b>Art: </b></label>
+        </div>
+        <div class="col-md-6">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioÜbungsart" id="üTheorie" value="Theorieübung">
+            <label class="form-check-label" for="üTheorie">Theorieübung</label>
           </div>
-          <div class="modal-body">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioÜbungsart" id="üPraxis" value="Praxisübung">
+            <label class="form-check-label" for="üPraxis">Praxisübung</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioÜbungsart" id="üArbeit" value="Arbeitseinsatz">
+            <label class="form-check-label" for="üArbeit">Arbeitseinsatz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioÜbungsart" id="üJugendarbeit" value="Allgemeine Jugendarbeit">
+            <label class="form-check-label" for="üJugendarbeit">Allgemeine Jugendarbeit</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioÜbungsart" id="üJugendwart" value="Jugendwartsarbeit">
+            <label class="form-check-label" for="üJugendwart">Jugendwartsarbeit</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioÜbungsart" id="üSport" value="Dienstsport">
+            <label class="form-check-label" for="üSport">Dienstsport</label>
+          </div>
+        </div>
+      </div>
+    </p>
+  </form>
+</div>
+<div class="container-fluid">
+  <p>
+    <div class="row">
+      <div class="col-md-4">
+        <button type="button" class="btn btn-danger" id="btnJugend" data-bs-toggle="modal" data-bs-target="#modalJugend">Jugendliche Erfassen</button> <!--hier Modal einbauen -->
+        <button type="button" class="btn btn-danger" id="btnBetreuer" data-bs-toggle="modal" data-bs-target="#modalBetreuer">Betreuer Erfassen</button> <!--hier Modal einbauen -->
+      </div>
+    </div>
+  </p>
+</div>
 
-            <div class="container">
-            <form>
+
+
+
+<div class="modal fade" id="modalJugend" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalJugend">Anwesenheit Jugendliche</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="container">
+          <form>
             <div class="row">
               <div class="col">
                 <label class="form-check-label" for="inlineRadio2">Jugendlicher</label>
@@ -499,31 +510,31 @@
             </div>
 
 
-            </form>
-            </div>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary"id="btnSaveJugend">Save changes</button>
-          </div>
+          </form>
         </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary"id="btnSaveJugend">Save changes</button>
       </div>
     </div>
+  </div>
+</div>
 
 
-    <div class="modal fade" id="modalBetreuer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalBetreuer">Anwesenheit Betreuer</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
+<div class="modal fade" id="modalBetreuer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBetreuer">Anwesenheit Betreuer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
 
-            <div class="container">
-            <form>
+        <div class="container">
+          <form>
             <div class="row">
               <div class="col">
                 <label class="form-check-label" for="inlineRadio2">Jugendlicher</label>
@@ -592,58 +603,66 @@
         </div>
       </div>
     </div>
-</div>
-    <div class="form-group row">
-      <label for="inBericht" class="col-sm-1 col-form-label"><b>Notizen</b></label>
-      <div class="col-sm">
-        <input type="text" class="form-control" id="inBericht">
-      </div>
-    </div>
-
-    <div class="form-group row">
-      <label for="inBesondereVorkommnisse" class="col-sm-1 col-form-label"><b>Besondere Vorkommnisse</b></label>
-      <div class="col-sm">
-        <input type="text" class="form-control" id="inBesondereVorkommnisse">
-      </div>
-    </div>
-
-
-    <div class="form-row">
-      <div class="form-group col-md-1">
-        <label for="radioEinsatzart"><b>Ebene</b></label>
-      </div>
-      <div class="form-group col-md-4">
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioEbene" id="ebeneOrt" value="Ortsebene">
-          <label class="form-check-label" for="ebeneOrt">Ortsebene</label>
+  </div>
+  <div class="container-fluid">
+    <form>
+      <p>
+        <div class="row">
+          <label for="inBericht" class="col-sm-1 col-form-label"><b>Notizen</b></label>
+          <div class="col-sm">
+            <input type="text" class="form-control" id="inBericht">
+          </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioEbene" id="ebeneGemeinde" value="Gemeindeebene">
-          <label class="form-check-label" for="ebeneGemeinde">Gemeindeebene</label>
+      </p>
+      <p>
+        <div class="row">
+          <label for="inBesondereVorkommnisse" class="col-sm-1 col-form-label"><b>Besondere Vorkommnisse</b></label>
+          <div class="col-sm">
+            <input type="text" class="form-control" id="inBesondereVorkommnisse">
+          </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioEbene" id="ebeneKreis" value="Kreisebene">
-          <label class="form-check-label" for="ebeneKreis">Kreisebene</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioEbene" id="ebeneLand" value="Erste Landesebene">
-          <label class="form-check-label" for="ebeneLand">Landesebene</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="radioEbene" id="ebeneBund" value="Bundesebene">
-          <label class="form-check-label" for="ebeneBund">Bundesebene</label>
-        </div>
+      </p>
+      <p>
+        <div class="row">
+          <div class="form-group col-md-1">
+            <label for="radioEinsatzart"><b>Ebene</b></label>
+          </div>
+          <div class="col">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioEbene" id="ebeneOrt" value="Ortsebene">
+              <label class="form-check-label" for="ebeneOrt">Ortsebene</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioEbene" id="ebeneGemeinde" value="Gemeindeebene">
+              <label class="form-check-label" for="ebeneGemeinde">Gemeindeebene</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioEbene" id="ebeneKreis" value="Kreisebene">
+              <label class="form-check-label" for="ebeneKreis">Kreisebene</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioEbene" id="ebeneLand" value="Erste Landesebene">
+              <label class="form-check-label" for="ebeneLand">Landesebene</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioEbene" id="ebeneBund" value="Bundesebene">
+              <label class="form-check-label" for="ebeneBund">Bundesebene</label>
+            </div>
 
-      </div>
-    </div>
-</div>
+          </div>
+        </div>
+      </p>
+    </form>
+  </div>
 
-    <div class="container-fluid">
-      <div class="form-group col-md-4">
+  <div class="container-fluid">
+    <div =class"row">
+      <div class="col-md-4">
         <a href=" " class="btn btn-danger btn-lg active" id="btnSpeichern" role="button" aria-pressed="true" alt="..." >Speichern</a>
         <a href=" " class="btn btn-danger btn-lg active" id="btnAbschicken" role="button" aria-pressed="true" alt="..." >Abschicken</a>
       </div>
     </div>
+  </div>
 </body>
 
 <foot>
