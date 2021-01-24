@@ -24,54 +24,62 @@
       <div class="col-sm">
         <div class="col-md4">
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="Home.html"> <img src="https://avatars2.githubusercontent.com/u/74532550?s=200&v=4" width="50" height="50" ></a>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="PlannerQuickview.html">Planner Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="MeetMe.html">Meet Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="Wiki.html">Wiki</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="Schulungsraum.html">Schulungsraum</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="Einsatzbericht.html">Einsatzbericht</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="Einsatzhelfer.html">Einsatzhelfer</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="Services.html">Services</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <div class="custom-control custom-switch mr-sm-2">
-                  <input type="checkbox" class="custom-control-input" id="toggleDarkmode" checked="true" onclick="toggleDM()">
-                  <label class="custom-control-label" for="toggleDarkmode">Darkmode</label>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="Home.html"> <img src="https://avatars2.githubusercontent.com/u/74532550?s=200&v=4" width="50" height="50" ></a>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="PlannerQuickview.html">Planner</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="MeetMe.html" >MeetMe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="Wiki.html">Wiki</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="Schulungsraum.html">Schulungsraum</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Einsatzbericht.html">Einsatzbericht</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="Einsatzhelfer.html">Einsatzhelfer</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Services.html">Services</a>
+                  </li>
+                </ul>
+                <div class="container-fluid" align="right">
+                  <form class="d-flex">
+                    <div class="custom-control custom-switch mr-sm-2">
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="toggleDarkmode" checked="true" onclick="toggleDM()">
+                        <label class="form-check-label" for="toggleDarkmode">Darkmode</label>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
-              </form>
-
-              <div class="col-md-1 ml-auto" align="right">
-                <a href="Profil.html" class="btn btn-danger btn-lg active" role="button" aria-pressed="true" alt="..." >Profil</a>
+                <div class="container-fluid" align="right">
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">Search</button>
+                  </form>
+                </div>
+                <div class="container-fluid" align="right">
+                  <a href="Profil.html" class="btn btn-danger btn-lg active" role="button" id="btnProfil" aria-pressed="true" alt="..." >Profil</a>
+                </div>
               </div>
             </div>
           </nav>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <nav aria-label="breadcrumb">
@@ -187,6 +195,21 @@
               </div>
               <div class="col">
                 <label class="form-check-label" for="inlineRadio2">Unentschuldigt</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <label class="form-check-label" for="inlineRadio2">Achammer, Christian</label>
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu20" id="irJu20" value="anwesend">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu20" id="irJu20" value="entschuldigt">
+              </div>
+              <div class="col">
+                <input class="form-check-input" type="radio" name="irJu20" id="irJu20" value="unentschuldigt">
               </div>
             </div>
 
