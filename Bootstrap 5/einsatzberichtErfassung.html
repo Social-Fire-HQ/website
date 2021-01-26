@@ -1,0 +1,686 @@
+<html lang="de">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Darkmode CSS -->
+  <link rel="stylesheet" href="assets/css/Darkmode.css">
+  <!-- Einsatzbericht JS -->
+  <script type="text/javascript" src="assets/js/Einsatzbericht.js"></script>
+  <!-- Darkmode JS -->
+  <script type="text/javascript" src="assets/js/navbar.js"></script>
+
+  <title>Social Fire HQ - Einsatzbericht</title>
+</head>
+
+<!--- -->
+
+<body>
+  <p></p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <div class="col-md4">
+
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--  <a class="navbar-brand" href="#">SFHQ</a> -->
+            <a class="navbar-brand" href="Home.html"> <img src="https://avatars2.githubusercontent.com/u/74532550?s=200&v=4" width="50" height="50" ></a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="PlannerQuickview.html">Planner Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="MeetMe.html">Meet Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Wiki.html">Wiki</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Schulungsraum.html">Schulungsraum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Einsatzbericht.html">Einsatzbericht</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Einsatzhelfer.html">Einsatzhelfer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="Services.html">Services</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <div class="custom-control custom-switch mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="toggleDarkmode" checked="true" onclick="toggleDM()">
+                  <label class="custom-control-label" for="toggleDarkmode">Darkmode</label>
+                </div>
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+              </form>
+
+              <div class="col-md-1 ml-auto" align="right">
+                <a href="Profil.html" class="btn btn-danger btn-lg active" role="button" aria-pressed="true" alt="..." >Profil</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Einsatzbericht</li>
+    </ol>
+  </nav>
+
+  <h3 align="center">Einsatzbericht</h3>
+
+  <div class="container-fluid">
+    <h5>Alarmierung</h5>
+    <form>
+      <div class="form-group row">
+        <label class="col-md-1 col-form-label"><b>Alarmzeitpunkt: </b></label>
+        <div class="col-fluid">
+          <label for="inDatum" >Datum</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inDatum">
+        </div>
+        <div class="col-fluid">
+          <label for="inUhrzeit" >Uhrzeit</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inUhrzeit">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkAlarmierung"><b>Alarmierungsart: </b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmSirene" value="Sirene">
+            <label class="form-check-label" for="alarmSirene">Sirene</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmPager" value="Pager">
+            <label class="form-check-label" for="alarmPager">Pager</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmTelefon" value="Telefon">
+            <label class="form-check-label" for="alarmTelefon">Telefon</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckAlarmierung" id="alarmSonstige" value="Sonstige">
+            <label class="form-check-label" for="alarmSonstige">Sonstige</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="radioEinsatzart"><b>Einsatzart: </b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzBrand" value="Brand" onclick="auswahlEinsatzart()">
+            <label class="form-check-label" for="einsatzBrand">Brand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzTHL" value="THL" onclick="auswahlEinsatzart()">
+            <label class="form-check-label" for="einsatzTHL">THL</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzVerkehrsabsicherung" value="Verkehrsabsicherung" onclick="auswahlEinsatzart()">
+            <label class="form-check-label" for="einsatzVerkehrsabsicherung">Verkehrsabsicherung</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzErsteHilfe" value="Erste Hilfe" onclick="auswahlEinsatzart()">
+            <label class="form-check-label" for="einsatzErsteHilfe">Erste Hilfe</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzSonstiges" value="Sonstiges" onclick="auswahlEinsatzart()">
+            <label class="form-check-label" for="einsatzSonstiges">Sonstiges</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEinsatzart" id="einsatzFehlalarm" value="Fehlalarm" onclick="auswahlEinsatzart()">
+            <label class="form-check-label" for="einsatzFehlalarm">Fehlalarm</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row" >
+        <div class="form-group col-md-1">
+        </div>
+        <div class="form-group col-fluid" id="artBraende" style="display:none">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioBrandart" id="brandKlein" value="Kleinbrand">
+            <label class="form-check-label" for="brandKlein">Kleinbrand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioBrandart" id="brandWald" value="Waldbrand/Vegetationsbrand">
+            <label class="form-check-label" for="brandWald">Waldbrand/Vegetationsbrand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioBrandart" id="brandPKW" value="Brand PKW/LKW/KRad">
+            <label class="form-check-label" for="brandPKW">Brand PKW/LKW/KRad</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioBrandart" id="brandWohnung" value="Wohnungsbrand">
+            <label class="form-check-label" for="brandWohnung">Wohnungsbrand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioBrandart" id="brandGebäude" value="Gebäudebrand">
+            <label class="form-check-label" for="brandGebäude">Gebäudebrand</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioBrandart" id="brandSonstige" value="sonstiger Brand">
+            <label class="form-check-label" for="brandSonstige">Sonstiger Brand</label>
+          </div>
+        </div>
+
+        <div class="form-group col-fluid" id="artTHL" style="display:none">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioTHLart" id="thlVuPKW" value="VU PKW">
+            <label class="form-check-label" for="thlVuPKW">VU PKW</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioTHLart" id="thlVuKrad" value="VU KRad">
+            <label class="form-check-label" for="thlVuKrad">VU KRad</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioTHLart" id="thlVULKW" value="VU LKW">
+            <label class="form-check-label" for="thlVULKW">VU LKW</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioTHLart" id="thlSturmeinsatz" value="Sturmeinsatz">
+            <label class="form-check-label" for="thlSturmeinsatz">Sturmeinsatz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioTHLart" id="thlBetriebsstoffe" value="Auslaufende Betriebsstoffe">
+            <label class="form-check-label" for="thlBetriebsstoffe">Auslaufende Betriebsstoffe</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioTHLart" id="thlTüröffnung" value="Türöffnung">
+            <label class="form-check-label" for="thlTüröffnung">Türöffnung</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioTHLart" id="thlSonstige" value="sonstige THL">
+            <label class="form-check-label" for="thlSonstige">sonstige THL</label>
+          </div>
+        </div>
+
+        <div class="form-group col-fluid" id="artVerkersabsicherung" style="display:none">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioVerkkehrsabsicherungart" id="vaUmzug" value="Umzug/Veranstaltung">
+            <label class="form-check-label" for="vaUmzug">Umzug/Veranstaltung</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioVerkkehrsabsicherungart" id="vaRettungsdienst" value="Absicherung Rettungsdienst">
+            <label class="form-check-label" for="vaRettungsdienst">Absicherung Rettungsdienst</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioVerkkehrsabsicherungart" id="vaBAB" value="reine Verkehrsabsicherung BAB">
+            <label class="form-check-label" for="vaBAB">reine Verkehrsabsicherung BAB</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioVerkkehrsabsicherungart" id="vaAußerorts" value="reine Verkehrsabsicherung Außerorts">
+            <label class="form-check-label" for="vaAußerorts">reine Verkehrsabsicherung Außerorts</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioVerkkehrsabsicherungart" id="vaInnerorts" value="reine Verkehrsabsicherung Innerorts">
+            <label class="form-check-label" for="vaInnerorts">reine Verkehrsabsicherung Innerorts</label>
+          </div>
+        </div>
+
+        <div class="form-group col-fluid" id="artEH" style="display:none">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEHart" id="ehRettungsdienst" value="EH Unterstützung Rettungsdienst">
+            <label class="form-check-label" for="ehRettungsdienst">EH Unterstützung Rettungsdienst</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEHart" id="ehSANwache" value="SAN Wache">
+            <label class="form-check-label" for="ehSANwache">SAN Wache</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="radioEHart" id="ehAllgemein" value="Allgemeine erste Hilfe">
+            <label class="form-check-label" for="ehAllgemein">Allgemeine erste Hilfe</label>
+          </div>
+        </div>
+
+
+
+          <div class="col-fluid" id="artSonstige" style="display:none">
+            <label for="inSonstiges">Sonstiger Einsatz:</label>
+          </div>
+          <div class="col-md-3" id="artSonstige2" style="display:none">
+            <input type="text" class="form-control" id="inSonstiges">
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <br><br>
+
+
+  <div class="container-fluid">
+    <h5>Einsatzinfos</h5>
+    <form>
+      <div class="form-group row">
+        <label for="inEinsatzort" class="col-sm-1 col-form-label"><b>Einsatzort </b></label>
+        <div class="col-sm">
+          <input type="text" class="form-control" id="inEinsatzort">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="inEinsatzleiter" class="col-sm-1 col-form-label"><b>Einsatzleiter </b></label>
+        <div class="col-sm">
+          <input type="text" class="form-control" id="inEinsatzleiter">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="inBericht" class="col-sm-1 col-form-label"><b>Bericht </b></label>
+        <div class="col-sm">
+          <input type="text" class="form-control" id="inBericht">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label  class="col-sm-1 col-form-label"><b>Daten Verursacher </b></label>
+        <div class="col-fluid">
+          <label for="inVerursacherName" >Nachname</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inVerursacherName">
+        </div>
+        <div class="col-fluid">
+          <label for="inVerursacherVorname" >Vorname</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inVerursacherVorname">
+        </div>
+        <div class="col-fluid">
+          <label for="inVerursacherAnschrift" >Anschrift</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inVerursacherAnschrift">
+        </div>
+        <div class="col-fluid">
+          <label for="inVerursacherKennzeichen" >Kennzeichen</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inVerursacherKennzeichen">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label for="checkAlarmierung" class="col-md-1 col-form-label"><b>Einsatzende: </b></label>
+        <div class="col-fluid">
+          <label for="inEndDatum" >Datum</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inEndDatum">
+        </div>
+        <div class="col-fluid">
+          <label for="inEndUhrzeit" >Uhrzeit</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" class="form-control" id="inEndUhrzeit">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkFoto"><b>Foto: </b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="checkFoto" id="fotoJa" value="fotoJa">
+            <label class="form-check-label" for="fotoJa">Ja</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="checkFoto" id="fotoNein" value="fotoNein">
+            <label class="form-check-label" for="fotoNein">Nein</label>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <br><br><br>
+
+
+  <div class="container-fluid">
+    <h5>Einheiten</h5>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="ceckFZG"><b>Eingesetzte Fahrzeuge: </b></label>
+        </div>
+        <div class="form-group col-md-5">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgHLF" value="HLF">
+            <label class="form-check-label" for="fzgHLF">HLF</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgGWL" value="GWL">
+            <label class="form-check-label" for="fzgGWL">GWL</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgVSA" value="VSA">
+            <label class="form-check-label" for="fzgVSA">VSA</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgMZF" value="MZF">
+            <label class="form-check-label" for="fzgMZF">MZF</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFZG" id="fzgLF8" value="LF8">
+            <label class="form-check-label" for="fzgLF8">LF8 (Appertshofen)</label>
+          </div>
+          <a href=" " class="btn btn-danger btn-lg active" id="btnBesatzung" role="button" aria-pressed="true" alt="..." >Besatzung auswählen</a>
+          <a href=" " class="btn btn-danger btn-lg active" id="btnKm" role="button" aria-pressed="true" alt="..." >Gefahrene KM</a>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="ceckFW"><b>Anwesende Feuerwehren</b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwHepberg" value="Hepberg">
+            <label class="form-check-label" for="fwHepberg">Hepberg</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwLenting" value="Lenting">
+            <label class="form-check-label" for="fwLenting">Lenting</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKoesching" value="Kösching">
+            <label class="form-check-label" for="fwKoesching">Kösching</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKBM" value="KBM">
+            <label class="form-check-label" for="fwKBM">KBM</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKBI" value="KBI">
+            <label class="form-check-label" for="fwKBI">KBI</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckFW" id="fwKBR" value="KBR">
+            <label class="form-check-label" for="fwKBR">KBR</label>
+          </div>
+        </div>
+        <div class="col-fluid">
+          <label for="fwWeitere">weitere</label>
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="fwWeitere">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="ceckWS"><b>Weitere Stellen</b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckWS" id="wsPol" value="Polizei">
+            <label class="form-check-label" for="wsPol">Polizei</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckWS" id="wsRTW" value="RTW">
+            <label class="form-check-label" for="wsRTW">RTW</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckWS" id="wsNEF" value="Notarzt">
+            <label class="form-check-label" for="wsNEF">Notarzt</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckWS" id="wsRTH" value="Christoph 32">
+            <label class="form-check-label" for="wsRTH">Christoph 32</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckWS" id="wsORGL" value="EL RD/ORGL">
+            <label class="form-check-label" for="wsORGL">EL RD/ORGL</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsSLT" value="Straßenlastträger">
+            <label class="form-check-label" for="wsSLT">Straßenlastträger</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="ceckEMEH" id="wsAbschlepper" value="Abschleppdienst">
+            <label class="form-check-label" for="wsAbschlepper">Abschleppdienst</label>
+          </div>
+        </div>
+        <div class="col-fluid">
+          <label for="wsWeitere" >weitere</label>
+        </div>
+        <div class="form-group col-md-4">
+          <input type="text" class="form-control" id="wsWeitere">
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+  <br><br><br>
+
+
+  <div class="container-fluid">
+    <h5>Einsatzmittel</h5>
+    <form>
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkVerbrauchsmittel"><b>Verbrauchsmittel: </b></label>
+        </div>
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkVerbrauchsmittel" id="vmWasser" value="Wasser" onclick="dispWassermenge()">
+            <label class="form-check-label" for="vmWasser">Wasser</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inWasser" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkVerbrauchsmittel" id="vmSchaum" value="Schaummittel" onclick="dispSchaummenge()">
+            <label class="form-check-label" for="vmSchaum">Schaummittel</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inSchaum" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkVerbrauchsmittel" id="vmÖlbinder" value="Ölbindemittel" onclick="dispÖlbindermenge()">
+            <label class="form-check-label" for="vmÖlbinder">Ölbindemittel</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inÖlbinder" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkVerbrauchsmittel" id="vmMüllsäcke" value="Müllsäcke" onclick="dispMüllmenge()">
+            <label class="form-check-label" for="vmMüllsäcke">Müllsäcke</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inMüll" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkVerbrauchsmittel" id="vmVerbandsmaterial" value="Verbandsmaterial" onclick="dispVerbandmenge()">
+            <label class="form-check-label" for="vmVerbandsmaterial">Verbandsmaterial</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="text" id="inVerband" style="display:none">
+          </div>
+    <!--      <a href=" " class="btn btn-danger btn-lg active" id="btnVerbrauchsmittelMenge" role="button" aria-pressed="true" alt="..." >Menge hinterlegen</a>   -->
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkEMfüllen"><b>Zum Füllen / Reinigen: </b></label>
+        </div>
+        <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfAtemschutz" value="Atemschutzgeräte" onclick="dispASmenge()">
+            <label class="form-check-label" for="emRettungssatz">Atemschutzgeräte</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inAS" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfLangzeitatmer" value="Langzeitatmer" onclick="dispLAmenge()">
+            <label class="form-check-label" for="emOelbinder">Langzeitatmer</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inLA" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfCO2" value="CO2 Löscher">
+            <label class="form-check-label" for="emKehren">CO2 Löscher</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfABC" value="ABC Pulverlöscher">
+            <label class="form-check-label" for="emGreifzug">ABC Pulverlöscher</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfCaffs" value="Caffs Löscher">
+            <label class="form-check-label" for="emGreifzug">Caffs Löscher</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfEinsatzjacken" value="Einsatzjacken" onclick="dispEJmenge()">
+            <label class="form-check-label" for="emGreifzug">Einsatzjacken</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inEJ" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfÜberjacken" value="Überjacken" onclick="dispÜJmenge()">
+            <label class="form-check-label" for="emGreifzug">Überjacken</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inÜJ" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfEinsatzhosen" value="Einsatzhosen" onclick="dispEHmenge()">
+            <label class="form-check-label" for="emGreifzug">Einsatzhosen</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inEH" style="display:none">
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEMfüllen" id="emfFlammschutzhauben" value="Flammschutzhauben" onclick="dispFHmenge()">
+            <label class="form-check-label" for="emGreifzug">Flammschutzhauben</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="number" id="inFH" style="display:none">
+          </div>
+      <!--    <a href=" " class="btn btn-danger btn-lg active" id="btnEmfMenge" role="button" aria-pressed="true" alt="..." >Menge hinterlegen</a> -->
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-1">
+          <label for="checkEM"><b>Geräte: </b></label>
+        </div>
+        <div class="form-group col-md-4">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emSchnellangriff" value="Schnellangriff">
+            <label class="form-check-label" for="emSchnellangriff">Schnellangriff</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emC" value="C-Rohre">
+            <label class="form-check-label" for="emC">C-Rohre</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emB" value="B-Rohre">
+            <label class="form-check-label" for="emB">B-Rohre</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emLüfter" value="Lüfter">
+            <label class="form-check-label" for="emLüfter">Lüfter</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emRettungssatz" value="Rettungssatz">
+            <label class="form-check-label" for="emRettungssatz">Rettungssatz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emSäbelsäge" value="Säbelsäge">
+            <label class="form-check-label" for="emSäbelsäge">Säbelsäge</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emFlex" value="Trennschleifer">
+            <label class="form-check-label" for="emFlex">Trennschleifer</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emGenerator" value="Stromerzeuger">
+            <label class="form-check-label" for="emGenerator">Stromerzeuger</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emLima" value="mobiler Lichtmast">
+            <label class="form-check-label" for="emLima">mobiler Lichtmast</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emMoon" value="Powermoon">
+            <label class="form-check-label" for="emMoon">Powermoon</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emKettensäge" value="Kettensäge">
+            <label class="form-check-label" for="emKettensäge">Kettensäge</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emTauchpumpe" value="Tauchpumpe">
+            <label class="form-check-label" for="emTauchpumpe">Tauchpumpe</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emBesen" value="Kehrwerkzeug">
+            <label class="form-check-label" for="emBesen">Kehrwerkzeug</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emAbsperrung" value="Absperrmaterial">
+            <label class="form-check-label" for="emAbsperrung">Absperrmaterial</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" name="checkEM" id="emSonstiges" value="Sonstiges">
+            <label class="form-check-label" for="emSonstiges">Sonstiges</label>
+          </div>
+          <a href=" " class="btn btn-danger btn-lg active" role="button" aria-pressed="true" alt="..." >Menge hinterlegen</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="container-fluid">
+    <div class="form-group col-md-4">
+      <a href=" " class="btn btn-danger btn-lg active" id="btnSpeichern" role="button" aria-pressed="true" alt="..." >Speichern</a>
+      <a href=" " class="btn btn-danger btn-lg active" id="btnAbschicken" role="button" aria-pressed="true" alt="..." >Abschicken</a>
+    </div>
+  </div>
+</body>
+
+<foot>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+</foot>
+</html>
